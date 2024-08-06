@@ -1,0 +1,165 @@
+body {
+    font-family: "Chewy", system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #b06113, #dcb145);
+}
+
+.nav-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    font-family: "Chewy", system-ui;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #d85a1b;
+    transform: scale(1.1);
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clock-dial {
+    width: 500px;
+    height: 500px;
+    border: 15px solid orange;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background: url('https://w0.peakpx.com/wallpaper/832/135/HD-wallpaper-the-lorax-lorax-movie-seuss-dr.jpg') no-repeat center center;
+    background-size: 190%;
+}
+
+.hour {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    position: absolute;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px;
+    border-radius: 50%;
+    transform-origin: center center;
+}
+
+.hour-1 { top: 40px; right: 130px; }
+.hour-2 { top: 125px; right: 45px; }
+.hour-3 { top: 235px; right: 10px; }
+.hour-4 { top: 345px; right: 45px; }
+.hour-5 { top: 410px; right: 130px; }
+.hour-6 { bottom: 10px; left: 240px; }
+.hour-7 { top: 410px; left: 130px; }
+.hour-8 { top: 345px; left: 45px; }
+.hour-9 { top: 235px; left: 10px; }
+.hour-10 { top: 125px; left: 45px; }
+.hour-11 { top: 40px; left: 130px; }
+.hour-12 { top: 10px; right: 235px;}
+
+.brand {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: "Chewy", system-ui;
+}
+
+.point {
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle, #555, #111); 
+    border: 3px solid #333; 
+    border-radius: 50%;
+    position: absolute;
+    top: 235px;
+    left: 235px;
+}
+
+.minute-hand-wrapper,
+.hour-hand-wrapper,
+.second-hand-wrapper {
+    position: absolute;
+    border-radius: 50%;
+    transition: none;
+}
+
+.minute-hand-wrapper {
+    width: 400px;
+    height: 400px;
+    top: 50px;
+    left: 50px;
+}
+
+.minute-hand .hand {
+    width: 4px;
+    height: 200px;
+    background: linear-gradient(to top, #333, #666);
+    position: absolute;
+    left: 50%;
+    transform-origin: bottom center;
+}
+
+.hour-hand-wrapper {
+    width: 300px;
+    height: 300px;
+    top: 100px;
+    left: 100px;
+}
+
+.hour-hand .hand {
+    width: 4px;
+    height: 150px;
+    background: linear-gradient(to top, #333, #666); 
+    position: absolute;
+    left: 50%;
+    transform-origin: bottom center;
+}
+
+.second-hand-wrapper {
+    width: 350px;
+    height: 350px;
+    top: 75px;
+    left: 75px;
+}
+
+.second-hand .hand {
+    width: 2px;
+    height: 175px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    transform-origin: bottom center;
+}
+
+.digital-clock {
+    font-family: "Chewy", system-ui;
+    font-size: 40px;
+    font-weight: lighter;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    background: orange;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
