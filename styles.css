@@ -8,30 +8,6 @@ body {
     background: linear-gradient(to right, #e0c3fc, #8ec5fc);
 }
 
-/* Styles for tablets */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-    .container {
-        padding: 20px;
-    }
-}
-
-/* Styles for mobile phones */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-    .container {
-        padding: 10px;
-    }
-    .nav-button {
-        width: 100%;
-        padding: 15px;
-    }
-}
-
 .nav-button {
     position: absolute;
     top: 20px;
@@ -104,14 +80,15 @@ body {
 
 
 .point {
-    width: 30px;
-    height: 30px;
+    width: 10px;
+    height: 10px;
     background: radial-gradient(circle, #555, #111); 
     border: 3px solid #333; 
     border-radius: 50%;
     position: absolute;
-    top: 235px;
-    left: 235px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .minute-hand-wrapper,
