@@ -1,5 +1,12 @@
 var d, second, minute, hour;
 
+function setDate() {
+    const dateDisplay = document.getElementById("date-display");
+    const today = new Date();
+    const day = today.getDate();
+    dateDisplay.textContent = day; 
+}
+
 function updateClock() {
     d = new Date();
     second = d.getSeconds() * 6;
@@ -14,8 +21,10 @@ function updateClock() {
     var minutes = d.getMinutes().toString().padStart(2, '0');
     var seconds = d.getSeconds().toString().padStart(2, '0');
     var ampm = d.getHours() >= 12 ? 'PM' : 'AM';
-
+    
     document.getElementById("digital-clock").innerText = `${hours}:${minutes}:${seconds} ${ampm}`;
+
+    setDate();
 }
 
 setInterval(updateClock, 1000);
