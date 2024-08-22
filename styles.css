@@ -8,30 +8,6 @@ body {
     background: linear-gradient(to right, #e0c3fc, #8ec5fc);
 }
 
-/* Styles for tablets */
-@media (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-    .container {
-        padding: 20px;
-    }
-}
-
-/* Styles for mobile phones */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-    .container {
-        padding: 10px;
-    }
-    .nav-button {
-        width: 100%;
-        padding: 15px;
-    }
-}
-
 .nav-button {
     position: absolute;
     top: 20px;
@@ -182,5 +158,24 @@ body {
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    height: 50px;
+    width: 500px;
 }
 
+.date-display {
+    position: absolute;
+    font-weight: bold;
+    top: 235px;
+    right: 90px;
+    width: 60px;
+    height: 60px;
+    background-color: purple;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'EB Garamond', serif; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
